@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AceAI - AI Smart Interview Simulation</title>
@@ -49,27 +48,14 @@
       align-items: center;
       gap: 0.5rem;
       font-weight: 700;
-      font-size: 1.5rem;
-      position: relative;
+      font-size: 1.25rem;
     }
     
-    .logo-text {
+    .logo-icon {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.5rem;
       background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #06B6D4 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-weight: 800;
-    }
-    
-    .logo-dot {
-      position: absolute;
-      top: -0.25rem;
-      right: -0.25rem;
-      width: 0.5rem;
-      height: 0.5rem;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
-      animation: pulse 2s infinite;
     }
     
     .nav-links {
@@ -316,8 +302,8 @@
   <nav class="navbar">
     <div class="nav-content">
       <div class="logo">
-        <span class="logo-text">AceAI</span>
-        <div class="logo-dot"></div>
+        <div class="logo-icon"></div>
+        <span>AceAI</span>
       </div>
       <div class="nav-links">
         <a href="/" class="back-btn">← Back to Home</a>
@@ -365,60 +351,3 @@
   <script src="interview.js"></script>
 </body>
 </html>
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Interview in Progress</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
-</head>
-<body>
-    <div id="loader" style="display: none;">
-        <div class="spinner"></div>
-        <p id="loader-text">Generating questions...</p>
-    </div>
-
-    <div class="video-container">
-        <video id="camera" autoplay muted playsinline style="display: none;"></video>
-        <div id="posture-status" class="posture-tag">Posture: Awaiting Analysis</div>
-        <!-- **CORRECTION**: Added element for real-time recommendations -->
-        <p id="posture-recommendation"></p> 
-    </div>
-
-    <div id="interview-container" class="container" style="display: none;">
-        <div class="question-box">
-            <p id="question-counter" class="question-counter-text"></p>
-            <h1 id="question-text">Loading question...</h1>
-        </div>
-        <div class="answer-box">
-            <textarea id="typed-answer" placeholder="Your answer will appear here as you speak... or you can type it."></textarea>
-            <button id="next-question" class="btn">Next Question</button>
-        </div>
-    </div>
-
-    <div id="evaluation-section" class="container" style="display: none;">
-        <h2>Evaluation Results</h2>
-        <div class="overall-feedback-card">
-            <h3>Overall Assessment</h3>
-            <p><strong>Proficiency Level:</strong> <span id="overall-proficiency"></span></p>
-            <p><strong>General Feedback:</strong> <span id="overall-feedback"></span></p>
-        </div>
-        <h3>Detailed Feedback</h3>
-        <table id="feedback-table">
-            <thead>
-                <tr>
-                    <th>Question</th>
-                    <th>Score</th>
-                    <th>Improvement Tip</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-        <button onclick="window.location.href='index.html'" class="btn">Try Another Interview</button>
-    </div>
-
-    <script src="interview.js"></script>
-</body>
-</html>
->>>>>>> 6ad88b1b591acef16929632bd9c20f9a2a3279c0
